@@ -60,3 +60,10 @@ O projeto foi construído utilizando uma stack moderna, performática e tipada:
 ## 📄 Licença
 
 Este projeto foi desenvolvido para fins de estudo, portfólio pessoal e experimentação tecnológica. Sinta-se livre para explorar o código!
+## 🛠️ O Processo de Desenvolvimento e Engenharia de Prompt
+
+Este projeto não nasceu pronto; ele foi o resultado de um processo intenso de **desenvolvimento iterativo (32 versões)** em menos de uma semana, superando limitações técnicas reais por meio de engenharia e criatividade:
+
+1. **Gestão de Infraestrutura e Cotas:** Como utilizei a camada gratuita do Google AI Studio, a cota de requisições diárias da API frequentemente se esgotava. Para não interromper o fluxo de criação, desenvolvi uma rotina híbrida: quando a API bloqueava, eu migrava o ambiente para o GitHub e continuava codificando a lógica estrutural, os componentes visuais em React e as rotinas de tratamento de erro diretamente no código-fonte.
+2. **Ciclos de Testes e Ajustes Manuais:** O software passou por mais de 30 ciclos de correção manual. Inicialmente, a IA apresentava comportamentos indesejados, como inventar informações de produtos ou estilizar caixas de texto com contrastes ruins no layout. Ajustei o código repetidamente, refinando o CSS com Tailwind e aplicando técnicas de *Few-Shot Prompting* e *System Instructions* rígidas até que a IA respondesse com precisão matemática às regras de negócio (como a proibição de preços em títulos do Mercado Livre).
+3. **Engenharia de Prompt Multimodal:** O maior desafio técnico foi calibrar o modelo para analisar imagens sem gerar falsos diagnósticos. O prompt foi construído para atuar como um auditor técnico de fotografia de e-commerce, separando feedbacks reais de iluminação e enquadramento de suposições arbitrárias.
