@@ -12,7 +12,7 @@ O coração do software baseia-se no **Princípio de Fidelidade Estrita (Anti-Al
 
 > **"A curiosidade e a lógica guiam a tecnologia, não as equações."**
 
-Olá! Meu nome é [Seu Nome aqui] e eu **desenvolvi este projeto completo aos 13 anos de idade por puro entretenimento, curiosidade e paixão por inovação.** 
+Olá! Meu nome é Guilherme e eu **desenvolvi este projeto completo aos 13 anos de idade por puro entretenimento, curiosidade e paixão por inovação.** 
 
 Eu sempre tive muita dificuldade com a matemática tradicional da escola, mas descobri que a revolução da inteligência artificial generativa opera através da **linguagem humana e do raciocínio lógico**. Utilizando Engenharia de Prompt Avançada combinada com desenvolvimento de software, eu arquitetei toda a interface, a lógica do servidor e os algoritmos de validação deste microsaas para resolver uma dor real do mercado.
 
