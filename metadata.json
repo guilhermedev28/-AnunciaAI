@@ -1,0 +1,7 @@
+{
+  "name": "AnunciaAI",
+  "description": "Crie e melhore anúncios de produtos para marketplaces e redes sociais com inteligência artificial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

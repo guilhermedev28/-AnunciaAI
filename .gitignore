@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Dados locais e métricas privadas
+server/.metrics-store.json
+
+# Dados locais e métricas privadas
+server/.metrics-store.json
