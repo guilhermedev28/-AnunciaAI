@@ -1,69 +1,114 @@
-# -AnunciaAI
-Um SaaS completo de IA generativa contra alucinações de dados, arquitetado e desenvolvido por mim aos 13 anos.
-# AnunciaAI 🚀 - SaaS Multimodal de Copywriting para Vendedores
+# AnunciaAI
 
-AnunciaAI é uma plataforma completa (SaaS) desenvolvida para auxiliar pequenos lojistas, e-commerces e profissionais autônomos a criarem e auditarem anúncios de alta conversão para marketplaces e redes sociais (Mercado Livre, Shopee, Instagram, WhatsApp). 
+**Criação, análise e otimização de anúncios com inteligência artificial.**
 
-O coração do software baseia-se no **Princípio de Fidelidade Estrita (Anti-Alucinação)**, garantindo que a inteligência artificial utilize única e exclusivamente as especificações técnicas reais informadas pelo vendedor, eliminando a criação de falsas promessas, prazos ou garantias fantasmas.
+O AnunciaAI é um projeto de software desenvolvido para ajudar vendedores, pequenos lojistas e profissionais autônomos a preparar anúncios mais claros, completos e adequados a diferentes canais de venda.
 
----
-
-## 🧑‍💻 Sobre o Criador (Sobre Mim)
-
-> **"A curiosidade e a lógica guiam a tecnologia, não as equações."**
-
-Olá! Meu nome é Guilherme e eu **desenvolvi este projeto completo aos 13 anos de idade por puro entretenimento, curiosidade e paixão por inovação.** 
-
-Eu sempre tive muita dificuldade com a matemática tradicional da escola, mas descobri que a revolução da inteligência artificial generativa opera através da **linguagem humana e do raciocínio lógico**. Utilizando Engenharia de Prompt Avançada combinada com desenvolvimento de software, eu arquitetei toda a interface, a lógica do servidor e os algoritmos de validação deste microsaas para resolver uma dor real do mercado.
+<p align="center">
+  <a href="https://ai.studio/apps/08d5c377-c0f7-4580-8e81-6835ab84bb7e"><strong>🚀 Experimentar o AnunciaAI</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/guilhermedev28/-AnunciaAI/tree/anunciaai-source"><strong>Ver código-fonte</strong></a>
+</p>
 
 ---
 
-## 🧰 Principais Funcionalidades
+## ✨ Funcionalidades
 
-1. **Gerador Inteligente de Anúncios:** Cria copies completas divididas em títulos, descrição estruturada, tópicos de diferenciais e uma única chamada para ação (CTA) segura.
-2. **Diagnóstico Profissional (0 a 100):** Avalia a copy atual do vendedor, gerando notas por critérios (Clareza, Título, Persuasão) e separando informações ausentes em categorias cruciais (*Essencial, Recomendável e Opcional*).
-3. **Gerador Especialista de Títulos (SEO):** Formula até 10 opções de títulos otimizados para busca. Conta com filtros rígidos que proíbem terminantemente a inclusão de preços em títulos voltados ao Mercado Livre (Regra de Ouro do marketplace).
-4. **Análise Fotográfica Visual:** Recebe imagens reais de produtos, analisa enquadramento, iluminação e qualidade, retornando feedbacks técnicos sem inventar problemas hipotéticos.
-5. **Creator Dashboard Privado:** Um painel administrativo em tempo real com gráficos de crescimento diário e logs de telemetria anônima protegida.
+- **Criador de anúncios:** gera títulos, descrições, benefícios e chamadas para ação a partir das informações fornecidas pelo vendedor.
+- **Analisador de anúncios:** avalia o texto e aponta oportunidades de melhoria.
+- **Melhoria de anúncios:** ajuda a reorganizar e aprimorar textos existentes.
+- **Gerador de títulos:** cria sugestões adaptadas a canais como Instagram, WhatsApp, Mercado Livre, Shopee e TikTok.
+- **Análise de fotos:** recebe imagens de produtos e oferece observações sobre aspectos visuais, como iluminação e enquadramento.
+- **Checklist de anúncios:** ajuda a revisar informações e pontos importantes antes da publicação.
+- **Painel administrativo:** área privada com métricas e atividades da aplicação.
+
+## 🛡️ Fidelidade às informações fornecidas
+
+Uma das principais preocupações do projeto é reduzir informações inventadas pela IA.
+
+As rotinas de geração e validação foram desenvolvidas para priorizar os dados enviados pelo usuário e evitar acrescentar características, garantias ou especificações que não foram informadas. O projeto também possui testes automatizados para verificar regras de geração e melhoria de anúncios.
+
+> A IA pode cometer erros; por isso, o conteúdo gerado deve ser revisado antes de ser publicado.
+
+## 🧰 Tecnologias
+
+| Camada | Tecnologias |
+|---|---|
+| Interface | React 19, TypeScript |
+| Build e desenvolvimento | Vite |
+| Estilização | Tailwind CSS |
+| Backend | Node.js, Express |
+| Inteligência artificial | Google GenAI SDK e Gemini |
+| Visualização de dados | Recharts |
+| Testes | TypeScript e tsx |
+
+## 🏗️ Arquitetura e confiabilidade
+
+- Aplicação organizada em componentes React e módulos de lógica separados.
+- Backend Express com rotas específicas para geração, análise, melhoria, títulos, checklist e análise de imagens.
+- Estratégia de seleção e tentativa sequencial de modelos Gemini no backend.
+- Respostas alternativas e validações para alguns fluxos quando a API está indisponível.
+- Middleware de limitação de requisições.
+- Proteção adicional para autenticação do painel administrativo.
+
+Essas medidas ajudam na organização e resiliência da aplicação, mas não representam uma garantia de disponibilidade ou de segurança absoluta.
+
+## 🧪 Testes e validação
+
+Na validação local registrada durante o desenvolvimento:
+
+- **16 testes automatizados aprovados** nas suítes de geração e melhoria de anúncios.
+- **Build de produção concluído** com sucesso.
+- Testes voltados à preservação das informações fornecidas e à prevenção de características não informadas.
+
+## 👨‍💻 Sobre o desenvolvimento
+
+O AnunciaAI foi desenvolvido por **Guilherme, aos 13 anos**, como um projeto independente de aprendizado e experimentação em inteligência artificial e desenvolvimento de software.
+
+O processo foi iterativo: segundo o histórico do projeto, foram realizadas **mais de 30 versões e ciclos de ajustes**, incluindo melhorias na interface, nos fluxos de geração, nas validações e no comportamento das respostas da IA.
+
+O objetivo foi transformar uma ideia em uma aplicação funcional, aprendendo na prática sobre frontend, backend, integração com APIs, testes e engenharia de prompts.
+
+## ▶️ Executar localmente
+
+**Requisitos:** Node.js e npm.
+
+1. Clone o repositório e entre na pasta do projeto.
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Crie um arquivo `.env` na raiz e configure as variáveis necessárias, usando `.env.example` como referência:
+
+```env
+GEMINI_API_KEY=sua_chave_google_genai
+CREATOR_ADMIN_KEY=sua_chave_administrativa
+```
+
+4. Inicie o ambiente de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Outros comandos disponíveis:
+
+```bash
+npm test
+npm run build
+npm start
+```
+
+**Importante:** nunca publique seu arquivo `.env`, chaves de API ou credenciais. O arquivo `.env.example` contém apenas os nomes das variáveis.
+
+## 🔗 Links
+
+- **Aplicação:** https://ai.studio/apps/08d5c377-c0f7-4580-8e81-6835ab84bb7e
+- **Código-fonte:** https://github.com/guilhermedev28/-AnunciaAI/tree/anunciaai-source
+- **Desenvolvedor:** https://github.com/guilhermedev28
 
 ---
 
-## ⚙️ Arquitetura Técnica e Tecnologias
-
-O projeto foi construído utilizando uma stack moderna, performática e tipada:
-
-*   **Frontend:** React 19, TypeScript, Vite, Tailwind CSS (v4) e Motion para animações fluidas.
-*   **Backend:** Node.js com Express estruturado para ambientes Cloud Run / Cloud SQL.
-*   **Engine de IA:** Google GenAI SDK integrado nativamente com a API do Gemini.
-*   **Resiliência & Failover:** Algoritmo customizado no backend que gerencia limites de cota (Erro 429) e faz failover automático em cascata entre os modelos candidatos (`gemini-3.1-flash-lite` -> `gemini-3.8-flash` -> `gemini-flash-latest`).
-*   **Segurança:** Middleware de *Rate Limiting* por IP do cliente e barreira criptográfica contra brute-force para o login do administrador.
-*   **Testes Automatizados:** Suíte de testes unitários automatizados executados via `tsx` para validar o comportamento de geração e os filtros de segurança anti-alucinação.
-
----
-
-## 🚀 Como Executar o Projeto Localmente
-
-1. Clone este repositório no seu computador.
-2. Instale as dependências executando o comando no terminal:
-   ```bash
-   npm install
-   ```
-3. Configure a sua chave de API do Gemini no arquivo `.env` (conforme as instruções do `.env.example`).
-4. Inicie o servidor de desenvolvimento:
-   ```bash
-   npm run dev
-   ```
-5. Abra o navegador no endereço indicado (geralmente `http://localhost:3000`).
-
----
-
-## 📄 Licença
-
-Este projeto foi desenvolvido para fins de estudo, portfólio pessoal e experimentação tecnológica. Sinta-se livre para explorar o código!
-## 🛠️ O Processo de Desenvolvimento e Engenharia de Prompt
-
-Este projeto não nasceu pronto; ele foi o resultado de um processo intenso de **desenvolvimento iterativo (32 versões)** em menos de uma semana, superando limitações técnicas reais por meio de engenharia e criatividade:
-
-1. **Gestão de Infraestrutura e Cotas:** Como utilizei a camada gratuita do Google AI Studio, a cota de requisições diárias da API frequentemente se esgotava. Para não interromper o fluxo de criação, desenvolvi uma rotina híbrida: quando a API bloqueava, eu migrava o ambiente para o GitHub e continuava codificando a lógica estrutural, os componentes visuais em React e as rotinas de tratamento de erro diretamente no código-fonte.
-2. **Ciclos de Testes e Ajustes Manuais:** O software passou por mais de 30 ciclos de correção manual. Inicialmente, a IA apresentava comportamentos indesejados, como inventar informações de produtos ou estilizar caixas de texto com contrastes ruins no layout. Ajustei o código repetidamente, refinando o CSS com Tailwind e aplicando técnicas de *Few-Shot Prompting* e *System Instructions* rígidas até que a IA respondesse com precisão matemática às regras de negócio (como a proibição de preços em títulos do Mercado Livre).
-3. **Engenharia de Prompt Multimodal:** O maior desafio técnico foi calibrar o modelo para analisar imagens sem gerar falsos diagnósticos. O prompt foi construído para atuar como um auditor técnico de fotografia de e-commerce, separando feedbacks reais de iluminação e enquadramento de suposições arbitrárias.
+*AnunciaAI — anúncios melhores, com inteligência artificial.*
